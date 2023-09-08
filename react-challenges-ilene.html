@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Foxtrot 2023 Cohort!</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return (<>
+            <Cohort />
+            <Classmates /> 
+            <Me />
+            </>)
+
+      }
+
+      const Cohort = () => {
+        return <h1>Foxtrot 2023 Cohort!</h1>
+      }
+
+      const Classmates = () => {
+        return (
+            <> 
+                <li> Tori </li>
+                <li> Dre </li>
+                <li> Mal </li>
+                <li> Aleja </li>
+                <li> Roniel </li> 
+                <li> Louis </li>
+                <li> Shaun </li>
+                <li> Xe </li>
+                <li> Adrian </li>
+                <li> Anabella </li>
+                <li> Ilene </li>
+            </>
+        )
+      }
+
+      const Me = () => {
+        return <h3> By Ilene </h3>
+      }
+
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
