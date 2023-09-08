@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return ( 
+            <div> 
+                <h1>Foxtrot 2023!</h1>
+                <p>louis</p>
+                <p>aleja</p>
+                <p>RTO</p>
+                <p>tori</p>
+                <p>shaun</p>
+                <p>mal</p>
+                <p>annabella</p>
+                <p>ilene</p>
+                <p>dre</p>
+                <p>xena</p>
+                <footer> Louis Brizuela </footer>
+                </div> 
+                )
+      }
+      const StudentList = () => {
+        return ( 
+            <div> 
+                <p>louis</p>
+                <p>aleja</p>
+                <p>RTO</p>
+                <p>tori</p>
+                <p>shaun</p>
+                <p>mal</p>
+                <p>annabella</p>
+                <p>ilene</p>
+                <p>dre</p>
+                <p>xena</p>
+                </div> )
+      }
+
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
+
+<!-- s a user, I see a Header component with the name of your cohort.
+As a user, I can see a Content component that contains an unordered list of all your classmates.
+As a user, I can see a Footer component with your name.
+ -->
