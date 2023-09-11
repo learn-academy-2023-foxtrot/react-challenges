@@ -1,0 +1,21 @@
+/* .box-counter{
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+} */
+
+/* .clicker {
+  display: flex;
+  justify-content: space-around;
+} */
+
+/* .button {
+  padding: "40px";
+  border-radius: "10px";
+  font-size: "larger";
+} */
+.box {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+}
