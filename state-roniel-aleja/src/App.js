@@ -4,7 +4,8 @@ const App = () => {
   return (
     <>
     <h1>Color Box Challenge</h1>
-    <Box/>
+      <Box/>
+      <Box/>
     </>
   )
 }
