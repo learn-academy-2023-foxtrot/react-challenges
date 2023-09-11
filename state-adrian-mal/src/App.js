@@ -16,14 +16,16 @@ const App = () => {
   
  
   //create new box;
-  
-
+  const boxes = []
+    for (let i=0; i < boxCount; i++) {
+      boxes.push(<SquareBox key={i} />)
+    }
   return (
     <>
     <h2>Challenge: Color Box</h2>
-    <button>Add Box</button>
-    <button>Remove Box</button>
-    
+    <button onClick = {addBox}>Add Box</button>
+    <button onClick = {removeBox}>Remove Box</button>
+    {boxes}
     <SquareBox />
     
     

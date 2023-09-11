@@ -1,6 +1,21 @@
 .box {
+  display: flex;
   height: 400px;
   width: 400px;
   border: 3px solid black;
+  transition: 0.8s;
+  border-radius: 20px;
+}
 
+#btn {
+  cursor: grab;
+  margin: auto;
+  background-color: white;
+  height: 50px;
+  width: 100px;
+  transition: .3seaseall;
+}
+
+#colorlabel {
+  margin: auto
 }
