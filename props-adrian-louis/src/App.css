@@ -1,0 +1,27 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  height: 500px;
+  width: 1000px;
+  border: 3px solid black;
+  margin-top: 200px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  top: 80px;
+}
+.DiceContainer {
+  height: 400px;
+  width: 700px;
+  border: 3px solid black;
+  margin: 30px;
+}
+.Rolls {
+  height: 400px;
+  width: 700px;
+  border: 3px solid black;
+  margin: 30px
+}
