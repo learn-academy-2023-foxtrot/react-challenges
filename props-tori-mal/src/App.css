@@ -2,4 +2,14 @@
   height: 300px;
   width: 300px;
   border: 2px solid black;
+  margin: auto;
+  text-align: center;
+}
+
+.counterbox {
+  text-align: center;
+  border: 2px dotted fuchsia;
+  width: 300px;
+  color: red;
+  margin: auto;
 }

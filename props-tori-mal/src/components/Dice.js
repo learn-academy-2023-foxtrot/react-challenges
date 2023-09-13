@@ -1,19 +1,13 @@
-import React, { useState } from "react"
+import React from "react"
 
 
-const Dice = () => {
-    const [number, setNumber] = useState()
-    const diceSidesArray = [1, 2, 3, 4, 5, 6]
-    const rollDice = () => {
-        const randomNumber = Math.floor(Math.random()*diceSidesArray.length)
-        console.log(randomNumber)
-        setNumber(diceSidesArray[randomNumber])
-    }
+const Dice = (props) => {
     return (
-    <>
-    <div className = "dicebox" onClick = {rollDice}>
-    {number}</div>
-    </>
+        <>
+            <div className = "dicebox" onClick = {props.rollDice}>
+            {props.number}
+            </div>
+        </>
     )
 }
 
