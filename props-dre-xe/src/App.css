@@ -1,0 +1,25 @@
+.box {
+  height: 200px;
+  width: 200px;
+  border: solid black;
+
+}
+
+.box-flex {
+display: flex;
+flex-wrap: wrap;
+justify-content: center; 
+}
+
+.number-flex{
+font-size: 150px;
+font: italic;
+text-align: center;
+margin: auto;
+}
+
+.box-two {
+  height: 200px;
+  width: 200px;
+  border: solid black;
+}
