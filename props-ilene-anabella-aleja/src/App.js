@@ -12,6 +12,13 @@ const App = () => {
      setCurrentNumber(Math.floor(Math.random()*7))
   }
   console.log(Math.floor(Math.random()*7))
+
+  // {setCurrentNum.map((num) => {
+  //   // return <currentNum/>
+  // })}
+
+
+
 return (
   <>
   <h1>Dice Roll Application</h1>
@@ -19,9 +26,16 @@ return (
     triggerRandomNum={triggerRandomNum}
     currentNumber={currentNumber} 
   /> 
+     <Rolls 
+     className="rolls-block"
 
+     
+     />
+
+     
   </>
 )
+
 
 }
 

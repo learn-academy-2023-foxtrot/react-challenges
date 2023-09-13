@@ -14,3 +14,8 @@ As a user, I can click a restart button that clears my roll log.
 - we need to iterate through the array with .map()
 - and return a random full number
 - the react part: currentNumber, serCurrentNumber 
+-created a state
+-created a function to trigger a random number and inside of that function we set the current number to a random number
+-made the onClick work to show the random numbers
+- inside the const App, in the dice element we defined the props
+-we need to create a list to log the numbers generated from the dice, and then show those numbers in another box (rolls)
