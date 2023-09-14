@@ -10,16 +10,17 @@ const App = () => {
     {entree: "volcano roll", amount: 70},
     {entree: "seaweed salad", amount: 50}
   ])
-    // const addToOrder = (index) => {
-    //   menu[index].entree
-    //   setMenu([...menu])
-    // }
+  const [order, setOrder] =useState([])
+    const addToOrder = (index) => {
+      menu[index].entree
+      setOrder([...menu])
+    }
   return (
     <>
     <div className="background">
       <h1 className="header">Dranabella's Gourmet Sushi</h1>
       <Menu menu={menu} /> 
-      <Order /> 
+      <Order order={order} addToOrder={addToOrder}/> 
     </div>
     </>
 
@@ -57,3 +58,7 @@ export default App;
 // PLAN:
 // FOR ORDER COMPONENT:
 // -we want to have the entree orders listed within the order box after they've been clicked on. 
+
+//QUESTIONS: How do we connect menu and order, so that the entrees in menu show up in order
+//How do we connect order to app.js 
+//How to we fix our error on line 15 
