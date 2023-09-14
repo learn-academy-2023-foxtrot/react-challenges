@@ -1,7 +1,7 @@
 import React from "react"
 
 const MenuMeal = (props) => {
-    console.log(props.menu[1].price)
+    // console.log(props.menu[1].price)
     return (
         <>
             <ul>

@@ -6,6 +6,7 @@ const Order = (props) => {
         <>
         <div className='order-box'>
             {/* the menu item that was ordered */}
+            {props.orders}
         </div>
         </>
     )
