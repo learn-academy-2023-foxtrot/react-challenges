@@ -1,5 +1,9 @@
 .menu{
   color: rgba(127, 255, 212, 0.914);
+  height: 400px;
+  width: 200px;
+  flex: auto;
+  border: rgba(127, 255, 212, 0.914);
 }
 
 .header{
@@ -8,4 +12,11 @@
 
 .background{
   background-color: black;
+}
+
+.order{
+  height: 400px;
+  width: 200px;
+  flex: auto;
+  border: rgba(127, 255, 212, 0.914);
 }
