@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import MenuItem from "./components/MenuItem"
-import Prices from "./components/Prices"
+
 
 const App = () => {
 
@@ -17,16 +17,20 @@ const increaseNumber = (index) => {
 }
 
 const totalPrice = (array) => {
-  array.map()
-  // 14.99 * 2 = 29.98
-  // 3.00 * 2 = 6.00
-  // 29.98 + 6.00 = $35.98
+  let total = array.map((value) => {
+    return value.price * value.amount 
+  })
+  let sum = 0
+  for(let i = 0; i < total.length; i++) {
+    sum += total[i]
+  }
+  return sum  
 }
   return (
     <>
       <h1>The Chum Bucket</h1>
       <MenuItem menu={menu} increaseNumber={increaseNumber} />
-      <Prices menu={menu} totalPrice={totalPrice}/>
+      <h2>Total Price: ${totalPrice(menu)}</h2>
     </>
   )
 }

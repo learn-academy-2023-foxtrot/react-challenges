@@ -54,3 +54,5 @@ export default MenuItem
   output: total price, number
   process: multiply the prices by the amount, add the results together, return the total number with a dollar sign in front 
   
+
+  //https://www.freecodecamp.org/news/how-to-add-numbers-in-javascript-arrays/
