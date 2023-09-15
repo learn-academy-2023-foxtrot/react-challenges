@@ -4,6 +4,11 @@ import BadRobot from "./components/BadRobot"
 import ReginaGeorgeBot from "./components/ReginaGeorgeBot"
 
 const App = () => {
+  const[userInput, setUserInput] = useState("Type what you want to say")
+  const manageChanges = (e) => {
+    setUserInput(e.target.value)
+    console.log(e.target.value)
+  }
 
   return(
     <>
@@ -11,7 +16,8 @@ const App = () => {
       Robo Active Listening
     </h1>
     <input 
-    type="text"
+      type="text"
+      onChange={manageChanges}
     />
     <GoodRobot />
     <BadRobot />
