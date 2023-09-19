@@ -8,8 +8,7 @@ const MenuItem = (props) => {
       {props.menu.map((item, index) => 
       <div key={index}>
             <button onClick={() => props.increaseAmount(index)}>Add</button>    
-          <li>{item.entree} -- price: {item.price} -- amount {item.amount}</li>
-          <button onClick={() => props.increasePrice(index)}>Calculate Price</button>
+          <li>{item.entree} -- price: $ {item.price} -- amount {item.amount}</li>
       </div>
         )}
       </ul>

@@ -17,3 +17,13 @@ component name:
           <li>{item.entree} -- price: {item.price}</li>
         })}
       </ul>
+
+       <ul>
+      {props.menu.map((item, index) => 
+      <div key={index}>
+            <button onClick={() => props.increaseAmount(index)}>Add</button>    
+          <li>{item.entree} -- price: {item.price} -- amount {item.amount}</li>
+          <button onClick={() => props.increasePrice(index)}>Calculate Price</button>
+      </div>
+        )}
+      </ul>
