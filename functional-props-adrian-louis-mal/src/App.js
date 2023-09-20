@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MenuItem from "./components/MenuItem";
 import Order from "./components/Order"
 
-
+// function declaration
 const App = () => {
   const [menu, setMenu] = useState([
     {entree: "functionFries", price: 2, amount: 0},
